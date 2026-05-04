@@ -1,114 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Saviour Okumu | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAVIOUR — IT Professional & Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
   <!-- NAV -->
-    <canvas id="bg-canvas"></canvas>
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">Saviour Okumu<span class="accent">.</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
+  <nav>
+    <div class="nav-logo">SAV<span>.</span>IO</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-grid-bg"></div>
-    <div class="hero-glow glow-1"></div>
-    <div class="hero-glow glow-2"></div>
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
     <div class="hero-content">
-      <div class="hero-badge fade-up">Available for opportunities</div>
-      <h1 class="hero-title fade-up">
-        <span class="hero-name" id="typed-name">Building Digital</span><br>
-        <span class="hero-role">Experiences<span class="accent">.</span></span>
+      <p class="hero-eyebrow">IT Professional &amp; Developer</p>
+      <h1 class="hero-name glitch" data-text="SAVIOUR">
+        <span class="accent">SAV</span>IOUR
       </h1>
-      <p class="hero-sub fade-up">
-        ICT Specialist &nbsp;·&nbsp; Developer &nbsp;·&nbsp; Problem Solver
+      <p class="hero-title">// Cybersecurity · Web Dev · Mobile · Backend</p>
+      <p class="hero-desc">
+        Detail-oriented technologist building scalable, user-centered digital solutions.
+        Specializing in cybersecurity and full-stack development turning complex ideas
+        into real-world applications.
       </p>
-      <p class="hero-desc fade-up">
-        Crafting software solutions that work — from mobile apps to real-time systems, with a sharp eye on security and scalability.
-      </p>
-      <div class="hero-actions fade-up">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
       </div>
     </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
+    <div class="scroll-indicator">
       <div class="scroll-line"></div>
+      <span>Scroll</span>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-label">/ About</div>
+  <section id="about">
+    <div class="section-wrap">
+      <p class="section-label reveal">001</p>
+      <h2 class="section-title reveal">About <span class="hl">Me</span></h2>
       <div class="about-grid">
-        <div class="about-text">
-          <h2 class="section-title fade-up">Driven by curiosity.<br>Built on experience.</h2>
-          <p class="about-para fade-up">
-            I'm an ICT Specialist with hands-on experience in a <strong>government technology environment</strong>, where I've provided IT support, maintained systems, and solved real operational challenges under pressure.
-          </p>
-          <p class="about-para fade-up">
-            My academic background in <strong>Computer Science</strong> gave me the fundamentals — but my projects are where the real learning happened. I've built a mood-driven music recommendation app from scratch and engineered a real-time election data management platform.
-          </p>
-          <p class="about-para fade-up">
-            My career is pointed toward <strong>software development, cybersecurity, and IT systems engineering</strong>. I believe in writing clean code, thinking about security from day one, and building systems that last.
-          </p>
-          <div class="about-stats fade-up">
-            <div class="stat">
-              <div class="stat-num">2+</div>
-              <div class="stat-label">Real-World Projects</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Gov</div>
-              <div class="stat-label">IT Support Experience</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">CS</div>
-              <div class="stat-label">Graduate</div>
-            </div>
-          </div>
+        <div class="about-text reveal">
+          <p>I'm a detail-oriented and innovative IT professional with a strong foundation in computer science and hands-on experience in web and mobile application development.</p>
+          <p>With growing specialization in <strong style="color:var(--cyan)">cybersecurity</strong> and <strong style="color:var(--cyan)">backend development</strong>, I'm passionate about building scalable digital solutions that improve systems and enhance user experience.</p>
+          <p>I've gained practical exposure to system maintenance, website management, and IT support through my work at the <strong style="color:var(--magenta)">Ministry of Works and Transport</strong> — and I bring that real-world perspective into every project I build.</p>
         </div>
-        <div class="about-visual fade-up">
-          <div class="av-card">
-            <div class="av-icon">🎓</div>
-            <div class="av-text">Computer Science</div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Technologies</div>
           </div>
-          <div class="av-card">
-            <div class="av-icon">🏛️</div>
-            <div class="av-text">Government IT Support</div>
+          <div class="stat-card">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Live Projects</div>
           </div>
-          <div class="av-card">
-            <div class="av-icon">🔐</div>
-            <div class="av-text">Cybersecurity Interest</div>
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Curiosity</div>
           </div>
-          <div class="av-card">
-            <div class="av-icon">📱</div>
-            <div class="av-text">Mobile App Developer</div>
+          <div class="stat-card">
+            <div class="stat-number">01</div>
+            <div class="stat-label">Focus: Security</div>
           </div>
         </div>
       </div>
@@ -116,196 +85,200 @@
   </section>
 
   <!-- SKILLS -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-label">/ Skills</div>
-      <h2 class="section-title fade-up">Technology stack<span class="accent">.</span></h2>
+  <section id="skills">
+    <div class="section-wrap">
+      <p class="section-label reveal">002</p>
+      <h2 class="section-title reveal">Tech <span class="hl">Stack</span></h2>
       <div class="skills-grid">
-
-        <div class="skill-category fade-up">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">⚡</span>
-            <span class="skill-cat-name">Frontend</span>
-          </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">⟨/⟩</div>
+          <div class="skill-cat-title">Frontend</div>
           <div class="skill-tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <div class="skill-bars">
-            <div class="sbar"><span>HTML5</span><div class="sbar-track"><div class="sbar-fill" data-w="90"></div></div></div>
-            <div class="sbar"><span>CSS3</span><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
-            <div class="sbar"><span>JavaScript</span><div class="sbar-track"><div class="sbar-fill" data-w="75"></div></div></div>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Responsive Design</span>
           </div>
         </div>
-
-        <div class="skill-category fade-up">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">🛠️</span>
-            <span class="skill-cat-name">Backend</span>
-          </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">⚙</div>
+          <div class="skill-cat-title">Backend</div>
           <div class="skill-tags">
-            <span class="tag">PHP</span>
-            <span class="tag">Firebase</span>
-          </div>
-          <div class="skill-bars">
-            <div class="sbar"><span>PHP</span><div class="sbar-track"><div class="sbar-fill" data-w="60"></div></div></div>
-            <div class="sbar"><span>Firebase</span><div class="sbar-track"><div class="sbar-fill" data-w="55"></div></div></div>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Server Management</span>
           </div>
         </div>
-
-        <div class="skill-category fade-up">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">📱</span>
-            <span class="skill-cat-name">Mobile</span>
-          </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">◈</div>
+          <div class="skill-cat-title">Mobile</div>
           <div class="skill-tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Dart</span>
-          </div>
-          <div class="skill-bars">
-            <div class="sbar"><span>Flutter</span><div class="sbar-track"><div class="sbar-fill" data-w="70"></div></div></div>
-            <div class="sbar"><span>Dart</span><div class="sbar-track"><div class="sbar-fill" data-w="68"></div></div></div>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">Cross-platform</span>
+            <span class="skill-tag">UI/UX</span>
           </div>
         </div>
-
-        <div class="skill-category fade-up">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">🔧</span>
-            <span class="skill-cat-name">Tools</span>
-          </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🛡</div>
+          <div class="skill-cat-title">Cybersecurity</div>
           <div class="skill-tags">
-            <span class="tag">VS Code</span>
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-          </div>
-          <div class="skill-bars">
-            <div class="sbar"><span>VS Code</span><div class="sbar-track"><div class="sbar-fill" data-w="88"></div></div></div>
-            <div class="sbar"><span>Git/GitHub</span><div class="sbar-track"><div class="sbar-fill" data-w="72"></div></div></div>
+            <span class="skill-tag">Network Security</span>
+            <span class="skill-tag">Vulnerability Analysis</span>
+            <span class="skill-tag">IT Support</span>
+            <span class="skill-tag">System Maintenance</span>
           </div>
         </div>
-
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">◎</div>
+          <div class="skill-cat-title">Tools & Systems</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Website Management</span>
+            <span class="skill-tag">CMS</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">◐</div>
+          <div class="skill-cat-title">Core Strengths</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Continuous Learning</span>
+            <span class="skill-tag">User-Centered Design</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <div class="section-label">/ Projects</div>
-      <h2 class="section-title fade-up">What I've built<span class="accent">.</span></h2>
-      <p class="section-sub fade-up">Real projects. Real problems. Real solutions.</p>
-
+  <section id="projects">
+    <div class="section-wrap">
+      <p class="section-label reveal">003</p>
+      <h2 class="section-title reveal">Featured <span class="hl">Projects</span></h2>
       <div class="projects-grid">
-
-        <div class="project-card fade-up">
-          <div class="project-num">01</div>
-          <div class="project-header">
-            <div class="project-icon">🎵</div>
-            <div class="project-links">
-              <span class="project-status">Completed</span>
-            </div>
+        <div class="project-card reveal">
+          <div class="project-number">PROJECT_01</div>
+          <h3 class="project-title">Mood-Based Music Mobile App</h3>
+          <p class="project-desc">A Flutter-powered mobile application that detects or receives a user's mood and curates a personalized music experience — bridging emotional intelligence with technology.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Mobile</span>
+            <span class="project-tag">UX Design</span>
           </div>
-          <h3 class="project-title">Mood-Based Music<br>Recommendation App</h3>
-          <p class="project-desc">
-            A Flutter mobile application that detects the user's current mood and curates personalized music recommendations. Designed with a focus on UX flow and emotional intelligence in human-computer interaction.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Flutter</span>
-            <span class="tech-tag">Dart</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">Music API</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-type">Mobile Application</span>
-          </div>
+          <a href="#" class="project-link">View Project</a>
         </div>
-
-        <div class="project-card project-card--featured fade-up">
-          <div class="project-num">02</div>
-          <div class="project-header">
-            <div class="project-icon">🗳️</div>
-            <div class="project-links">
-              <span class="project-status project-status--live">Live System</span>
-            </div>
+        <div class="project-card reveal">
+          <div class="project-number">PROJECT_02</div>
+          <h3 class="project-title">Election Results Management System</h3>
+          <p class="project-desc">A data-driven web platform for managing, processing, and displaying election results in real time — demonstrating the ability to translate complex civic infrastructure into functional software.</p>
+          <div class="project-tags">
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Data Systems</span>
           </div>
-          <h3 class="project-title">Election Results<br>Management System</h3>
-          <p class="project-desc">
-            A real-time election data capture and results management platform built for high-stakes environments. Features a live dashboard with data verification, role-based access, and instant result aggregation.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">HTML/CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">Real-time DB</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-type">Web Platform</span>
-          </div>
-          <div class="card-glow"></div>
+          <a href="#" class="project-link">View Project</a>
         </div>
+        <div class="project-card reveal">
+          <div class="project-number">PROJECT_03</div>
+          <h3 class="project-title">Ministry IT Infrastructure Support</h3>
+          <p class="project-desc">Hands-on IT support, system maintenance, and website management delivered at the Ministry of Works and Transport — maintaining uptime and supporting organizational digital operations.</p>
+          <div class="project-tags">
+            <span class="project-tag">IT Support</span>
+            <span class="project-tag">Web Management</span>
+            <span class="project-tag">System Admin</span>
+          </div>
+          <a href="#" class="project-link">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-wrap">
+      <p class="section-label reveal">004</p>
+      <h2 class="section-title reveal">Work <span class="hl">Experience</span></h2>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 — Present</div>
+          <div class="timeline-role">IT Support & Web Administrator</div>
+          <div class="timeline-org">Ministry of Works and Transport</div>
+          <div class="timeline-desc">Responsible for system maintenance, website management, and IT support. Ensured operational continuity across digital infrastructure, providing technical assistance and implementing web solutions to support ministry functions.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Academic Projects</div>
+          <div class="timeline-role">Full-Stack Developer</div>
+          <div class="timeline-org">Independent / University Projects</div>
+          <div class="timeline-desc">Developed a mood-based music mobile application using Flutter and a data-driven election results management system using PHP and MySQL — both demonstrating end-to-end development capability.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Ongoing</div>
+          <div class="timeline-role">Cybersecurity Specialization</div>
+          <div class="timeline-org">Self-Directed Learning</div>
+          <div class="timeline-desc">Actively pursuing advanced knowledge in cybersecurity, network security, and backend architecture — building toward a specialization in securing scalable digital systems.</div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-label">/ Contact</div>
+  <section id="contact">
+    <div class="section-wrap">
+      <p class="section-label reveal">005</p>
+      <h2 class="section-title reveal">Get In <span class="hl">Touch</span></h2>
       <div class="contact-inner">
-        <div class="contact-text fade-up">
-          <h2 class="section-title">Let's work<br>together<span class="accent">.</span></h2>
-          <p class="contact-sub">
-            Open to opportunities in software development, cybersecurity, and IT systems engineering. Let's have a conversation.
-          </p>
+        <div class="contact-text reveal">
+          <p>I'm open to new opportunities, collaborations, and conversations. Whether you have a project in mind or just want to connect — my inbox is always open.</p>
+          <div class="contact-links">
+            <a href="mailto:saviour@email.com" class="contact-link">
+              <span class="link-label">EMAIL</span>
+              osaviour991@gmail.com
+            </a>
+            <!-- <a href="#" class="contact-link">
+              <span class="link-label">LINKEDIN</span>
+              linkedin.com/in/saviour
+            </a> -->
+            <a href="#" class="contact-link">
+              <span class="link-label">GITHUB</span>
+              https://github.com/Saviour25th
+            </a>
+            <a href="#" class="contact-link">
+              <span class="link-label">LOCATION</span>
+              Available Remotely
+            </a>
+          </div>
         </div>
-        <div class="contact-actions fade-up">
-          <a href="mailto:your.email@example.com" class="contact-card">
-            <div class="cc-icon">✉️</div>
-            <div class="cc-body">
-              <div class="cc-label">Send an Email</div>
-              <div class="cc-value">your.email@example.com</div>
-            </div>
-            <div class="cc-arrow">→</div>
-          </a>
-          <a href="https://wa.me/256700000000" target="_blank" class="contact-card contact-card--wa">
-            <div class="cc-icon">💬</div>
-            <div class="cc-body">
-              <div class="cc-label">WhatsApp</div>
-              <div class="cc-value">+256 700 000 000</div>
-            </div>
-            <div class="cc-arrow">→</div>
-          </a>
-          <a href="https://github.com/yourusername" target="_blank" class="contact-card">
-            <div class="cc-icon">🐙</div>
-            <div class="cc-body">
-              <div class="cc-label">GitHub</div>
-              <div class="cc-value">github.com/yourusername</div>
-            </div>
-            <div class="cc-arrow">→</div>
-          </a>
+        <div class="contact-form reveal">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="John">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell me about your project or opportunity..."></textarea>
+          </div>
+          <button id="sendBtn" class="btn-primary" style="border:none;cursor:pointer;font-size:0.75rem;">Send Message</button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-logo">Saviour Okumu<span class="accent">.</span></div>
-        <div class="footer-copy">© 2026 — ICT Specialist & Developer. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="#hero">Top</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </div>
+  <footer>
+    <div class="footer-logo">SAVIOUR</div>
+    <div class="footer-copy">© 2026 — Built with precision</div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
